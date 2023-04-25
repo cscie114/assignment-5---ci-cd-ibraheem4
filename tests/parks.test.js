@@ -1,7 +1,6 @@
-/* eslint-disable no-undef */
 // parks.test.js
 
-const fetchParks = require("./parks");
+const fetchParks = require("../src/_data/parks");
 const EleventyFetch = require("@11ty/eleventy-fetch");
 
 jest.mock("@11ty/eleventy-fetch");
