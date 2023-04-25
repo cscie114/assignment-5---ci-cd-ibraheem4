@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 // massachusetts.test.js
-import { jest } from "@jest/globals";
 
 const fetchMassachusettsParks = require("./massachusetts");
 const EleventyFetch = require("@11ty/eleventy-fetch");
