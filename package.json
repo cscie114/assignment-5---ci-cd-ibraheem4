@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:unit",
+    "test:unit": "jest --passWithNoTests",
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "lint": "eslint --ext js,jsx src"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   "devDependencies": {
     "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-fetch": "3.0.0",
-    "dotenv": "16.0.3"
+    "dotenv": "16.0.3",
+    "eslint": "8.39.0",
+    "eslint-plugin-react": "7.32.2"
   }
 }
