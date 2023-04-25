@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:unit",
-    "test:unit": "jest --passWithNoTests",
+    "test": "jest",
     "build": "eleventy",
     "start": "eleventy --serve",
     "lint": "eslint --ext js src"
