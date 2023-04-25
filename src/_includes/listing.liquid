@@ -1,0 +1,14 @@
+<article class="listing">
+  <h2>{{ park.fullName }}</h2>
+  <figure>
+    <img src="{{ park.images[0].url }}" alt="{{ park.images[0].altText }}">
+    <figcaption>
+      <strong>{{ park.images[0].title }}.</strong>
+      {{ park.images[0].caption -}}
+      <br>
+      <i>{{ park.images[0].credit }}</i>
+    </figcaption>
+  </figure>
+  <p>{{ park.description }}</p>
+  <a href="{{ park.url }}">{{ park.url }}</a>
+</article>

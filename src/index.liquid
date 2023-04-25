@@ -1,0 +1,31 @@
+---
+layout: base
+title: Index Page
+---
+<h1>Ibraheem's 11th Assignment</h1>
+
+<p>We're rendering this page with a layout called "base" and we're using the title "Index Page" for this page.</p>
+
+<p>Honestly, I haven't been to many national parks. I guess they don't have them in big cities.</p>
+
+<h1>Assignment Component Links</h1>
+
+<h2><a href="/maine">Maine Parks</a></h2>
+<code>/maine</code>
+<p>This data comes from <code>src/data/maine.json</code> JSON data file</p>
+
+<h2><a href="/massachusetts">Massachusetts Parks</a></h2>
+<code>/massachusetts</code>
+<p>This data comes NPS API via <code>src/data/massachusetts.js</code> JSON data file</p>
+
+<p>We're using <code>listing.liquid</code> to render the list of parks as well as individual parks pages.</p>
+
+<h2>
+  <a href="/all-parks">All Parks</a>
+</h2>
+<code>/all-parks</code>
+
+<p>
+  This list is via 11ty's collections, and the individual pages are created with 11ty's pagination, based on data from
+  NPS API, via <code>src/_data/parks</code>
+</p>

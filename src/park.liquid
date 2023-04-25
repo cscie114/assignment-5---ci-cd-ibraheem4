@@ -1,0 +1,16 @@
+---
+tags:
+  - parks
+title: National Park Service
+layout: base
+pagination:
+  data: parks.data
+  size: 1
+  alias: park
+  addAllPagesToCollections: true
+permalink: /parks/{{ park.fullName | slugify }}/
+eleventyComputed:
+  title:
+    - "{{ park.name }} {{ park.designation }}"
+---
+{% render 'listing', park: park %}

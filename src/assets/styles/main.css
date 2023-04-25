@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+  background-color: beige;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header,
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer {
+  background-color: #ddd;
+  font-size: smaller;
+  padding: 1rem;
+  margin-top: 5rem;
+  border-top: 2px solid black;
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "site-title   nav"
+    "page-title   page-title";
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  grid-area: site-title;
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 6vw;
+}
+
+header h2 {
+  grid-area: page-title;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+header nav {
+  grid-area: nav;
+  justify-self: end;
+  align-self: center;
+}
+
+main p {
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.listing {
+  border: thin solid black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.listing > h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.listing > figure {
+  font-size: smaller;
+  margin: 0;
+}
+
+.listing > a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}

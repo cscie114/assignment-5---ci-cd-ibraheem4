@@ -1,0 +1,11 @@
+---
+layout: base
+title: 'All Parks'
+---
+<ul>
+  {% for item in collections.parks %}
+    <li>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

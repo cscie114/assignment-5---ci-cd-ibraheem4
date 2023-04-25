@@ -1,0 +1,9 @@
+---
+layout: base
+title: Maine Parks
+---
+<div class="wrapper">
+  {% for park in maine.data -%}
+    {% render 'listing', park: park %}
+  {% endfor -%}
+</div>
