@@ -8,7 +8,7 @@ This repository holds the starter code for assignment 5, in which we practice th
 
 # Deployment instructions
 
-1. Download reposity from GitHub
+1. Download repository from GitHub
 2. Install dependencies with `npm install`
 3. Run `npm run build` to build the project
 4. Run `npm run start` to start the project
