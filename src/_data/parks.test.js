@@ -4,6 +4,8 @@
 const fetchParks = require("./parks");
 const EleventyFetch = require("@11ty/eleventy-fetch");
 
+const { expect } = require("@jest/globals");
+
 jest.mock("@11ty/eleventy-fetch");
 jest.mock("dotenv", () => ({
   config: jest.fn(),
