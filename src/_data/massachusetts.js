@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const EleventyFetch = require("@11ty/eleventy-fetch");
 require("dotenv").config();
 

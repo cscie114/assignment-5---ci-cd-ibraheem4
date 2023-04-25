@@ -8,7 +8,7 @@
     "test:unit": "jest --passWithNoTests",
     "build": "eleventy",
     "start": "eleventy --serve",
-    "lint": "eslint --ext js,jsx src"
+    "lint": "eslint --ext js src"
   },
   "repository": {
     "type": "git",
