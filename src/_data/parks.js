@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-import EleventyFetch from "@11ty/eleventy-fetch";
+const EleventyFetch = require("@11ty/eleventy-fetch");
 require("dotenv").config();
 
-export default async function () {
+module.exports = async function () {
   /* National Parks Service API
      https://developer.nps.gov/api/v1/parks */
 
@@ -39,4 +39,4 @@ export default async function () {
     console.error("something is wrong");
     console.log(err);
   }
-}
+};
