@@ -2,15 +2,21 @@
 name: Build and Deploy to Netlify
 on:
   push:
+    branches: ["main"]
   pull_request:
+    branches: ["main"]
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # ( Build to ./dist or other directory... )
-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run test
+      - run: npm run build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:
